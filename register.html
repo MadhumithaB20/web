@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="poem-madhumitha">
+    <meta name="keywords" content="form,html">
+    <meta name="description" content="form designed using html">
+    <title>Document</title>
+</head>
+<body>
+    <form action="login.html" enctype="multipart/form-data" method="post">
+       <fieldset>
+        <legend>personal data</legend>
+       <label for="fname">firstname</label>
+        <input type="text" id="fname" size="10" maxlength="5"><br>
+        <label for="lname" >lastname</label>
+        <input type="text" id="lname" ><br>
+        <label>Gender:</label>
+        <label for="mal">Male</label>
+        <input type="radio" id="mal" name="gen" >
+        <label for="fem">Female</label>
+        <input type="radio" id="fem" name="gen"><br>
+       </fieldset>
+        <label for="do">enter your dob</label>
+        <input type="date" id="do"><br>
+        <label for="">enter time</label>
+        <input type="time"><br>
+        <label for="">enter week</label>
+        <input type="week"><br>
+        <label for="">enter month</label>
+        <input type="month"><br>
+        <label for="">Enter phone number</label>
+        <input type="tel" placeholder="xx-xxxx-xxxx" pattern="[0-9]{10}"><br>
+        <label for="">Enter user name</label>
+        <input type="text" placeholder="enter username"  pattern="[\w.@$&#]{3,}"><br>
+        <label for="">Enter Password</label>
+        <input type="password" placeholder="enter password"  pattern="[A-Za-z0-9]{8,}"><br>
+        <label for="">Enter mailid</label>
+        <input type="email" id="mail" placeholder="enter mailid"><br>
+        <label for="">Select Hobby</label>
+        <input type="checkbox" name="hob[]">cricket
+        <input type="checkbox" name="hob[]" checked="checked">reading
+        <input type="checkbox" name="hob[]">hockey <br>
+        <label for="coun">country</label>
+        <select name="" id="coun" multiple="2">
+            <option value="select">select</option>
+            <option value="india">india</option>
+            <option value="us">us</option>
+            <option value="australia">australia</option>
+            <option value="uk">uk</option>
+            <option value="africa">africa</option>
+        </select><br>
+        <input type="file"><br>
+        <label for="">enter feedback</label>
+        <textarea name="" id="" cols="10" rows="10" size="20" maxlength="25"></textarea>       
+        <input type="submit"><br>
+        <input type="reset">
+    </form>  
+</body>
+</html>
